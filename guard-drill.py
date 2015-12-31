@@ -21,10 +21,6 @@ stationary_dist = pd.Series(np.linalg.matrix_power(trans_probs.values, n)[:,0], 
 print "\n\nLong-run probability of being in each guard:"
 print stationary_dist
 
-# FIXME: MIDDLE IRON DOOR IS NOT PROBABLE ENOUGH.
-
-exit(1)
-
 print "Push Ctrl+C to exit."
 next_action = np.random.choice(trans_probs.index)
 while True:
