@@ -5,7 +5,7 @@ import time
 import pandas as pd
 import numpy as np
 
-class Opponent:
+class Swordsman:
     def __init__(self, guard_trans_probs, dist_trans_probs):
         self.guard_trans_probs = guard_trans_probs
         self.dist_trans_probs = dist_trans_probs
@@ -32,8 +32,8 @@ guard_trans_probs = affinity_mat_guards / affinity_mat_guards.sum()
 dist_trans_probs = affinity_mat_dists / affinity_mat_dists.sum()
 
 print "Push Ctrl+C to exit."
-adversary = Opponent(guard_trans_probs, dist_trans_probs)
+player = Swordsman(guard_trans_probs, dist_trans_probs)
 while True:
-    adversary.take_next_stance()
-    adversary.say_current_stance()
+    player.take_next_stance()
+    player.say_current_stance()
     time.sleep(5)
