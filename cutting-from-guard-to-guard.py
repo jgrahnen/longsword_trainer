@@ -16,7 +16,7 @@ guards = [
         Guard("Open Iron Door", "low", "right"),
         Guard("Middle Iron Door", "low", "middle"),
         Guard("Boar's Tooth", "low", "middle"),
-        Guard("Middle Boar's Tooth", "low", "middle"),
+        #Guard("Middle Boar's Tooth", "low", "middle"),
         Guard("Short guard", "middle", "up"),
         #Guard("Bicorn", "middle", "middle"),
         #Guard("Crown guard", "middle", "up"),
@@ -24,11 +24,11 @@ guards = [
         Guard("Posta falcone", "high", "up"),
         Guard("Women's guard", "high", "back"),
         Guard("Women's guard on the left", "high", "back"),
-        Guard("Window guard", "high", "left")
+        #Guard("Window guard", "high", "left")
         ]
 
 
-def say(instruction, wait_time=5):
+def say(instruction, wait_time=3):
     sp.call(['say', instruction])
     time.sleep(wait_time)
 
