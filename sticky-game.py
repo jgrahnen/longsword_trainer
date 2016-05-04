@@ -36,4 +36,4 @@ player = Swordsman(guard_trans_probs, dist_trans_probs)
 while True:
     player.take_next_stance()
     player.say_current_stance()
-    time.sleep(5)
+    time.sleep(3)
