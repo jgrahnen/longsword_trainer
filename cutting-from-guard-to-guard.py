@@ -21,7 +21,7 @@ guards = [
         #Guard("Bicorn", "middle", "middle"),
         #Guard("Crown guard", "middle", "up"),
         Guard("Long guard", "middle", "middle"),
-        Guard("Vadi's Women's guard", "high", "up"),
+        Guard("Posta falcone", "high", "up"),
         Guard("Women's guard", "high", "back"),
         Guard("Women's guard on the left", "high", "back"),
         Guard("Window guard", "high", "left")
