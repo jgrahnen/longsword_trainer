@@ -11,4 +11,4 @@ while True:
     action = random.choice(steps)
     print action
     sp.call(['say', action])
-    time.sleep(3)
+    time.sleep(2)
